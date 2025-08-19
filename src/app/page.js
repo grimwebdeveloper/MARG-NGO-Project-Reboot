@@ -1,7 +1,5 @@
 function page() {
-  return (
-    <main>Home</main>
-  )
+  return <main>Home</main>;
 }
 
-export default page
+export default page;
