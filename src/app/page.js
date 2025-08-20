@@ -1,5 +1,11 @@
+import SliderHero from '@/components/home/SliderHero';
+
 function page() {
-  return <main>Home</main>;
+  return (
+    <main>
+      <SliderHero />
+    </main>
+  );
 }
 
 export default page;
