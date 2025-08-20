@@ -143,11 +143,11 @@ const Footer = () => {
             and social norms. Since Project Nanhi Kali is a participatory
             initiative, you too can contribute and support the girl child. With
             an annual progress report, you can track how well your Nanhi Kali/s
-            are progressing. You can educate a girl child by clicking here.{' '}
+            are progressing. You can educate a girl child by clicking here.&nbsp;
           </p>
           <h3 className='mt-6 font-semibold'>THE GIRL CHILD IN INDIA</h3>
           <p className='pl-6 text-justify'>
-            It's no surprise that India ranks as one of the countries with the
+            It&apos;s no surprise that India ranks as one of the countries with the
             highest male to female ratio. Unfortunately, it is the biased
             mindset towards the male child in India that leads to issues like
             girl child abandonment at birth and the practice of child marriage.
@@ -186,10 +186,10 @@ const Footer = () => {
           </p>
         </article>
         <p className='text-center pt-6'>
-          All Rights Reserved &copy;{' '}
+          All Rights Reserved &copy;&nbsp;
           <Link href='/' className='font-semibold hover:text-zinc-300 text-lg'>
             marngo.com
-          </Link>{' '}
+          </Link>&nbsp;
           2025
         </p>
       </div>
