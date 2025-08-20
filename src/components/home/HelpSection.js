@@ -17,7 +17,7 @@ export default function HelpSection() {
             <strong>Project Nanhi Kali</strong> is a participatory project wherein you can sponsor the education of an underprivileged girl child for a minimum period of one year. For just ₹6,000, you can provide her with the key to a brighter future.
           </p>
           <p className="text-gray-800 mb-4 text-lg">
-            Your support goes beyond financial assistance—it's an investment in her potential, her dreams, and her empowerment. She gains access to 21st century skills, physical education, and a chance to break free from household work.
+            Your support goes beyond financial assistance—it&apos;s an investment in her potential, her dreams, and her empowerment. She gains access to 21st century skills, physical education, and a chance to break free from household work.
           </p>
           <p className="text-gray-800 mb-6 text-lg">
             Sponsors receive an annual progress report, witnessing firsthand the impact of their generosity.
