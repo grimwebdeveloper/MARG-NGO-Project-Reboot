@@ -13,10 +13,10 @@ function page() {
       <DonateAndGift />
       <Project />
       {/* <SliderImpact /> */}
-      <Slide/>
+      {/* <Slide/> */}
       {/* <Sponsor /> */}
-      <Sponsors/>
-      <TakeALook />
+      {/* <Sponsors/> */}
+      {/* <TakeALook /> */}
     </main>
   );
 }
