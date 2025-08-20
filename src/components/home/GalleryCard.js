@@ -21,7 +21,15 @@ const GalleryCard = () => {
         <div className='grid gap-6 md:grid-cols-2'>
           {galleryCardData.map((item, idx) => (
             <div key={idx} className='p-2 bg-white pb-6'>
-              <Image src={item.img} alt='gallery' width={684} height={285} />
+              <div className='overflow-hidden'>
+                <Image
+                  src={item.img}
+                  alt='gallery'
+                  width={684}
+                  height={285}
+                  className='hover:scale-110 transition-transform duration-500'
+                />
+              </div>
               <Button content={item.buttonContent} externalClass='mx-auto ' />
             </div>
           ))}
