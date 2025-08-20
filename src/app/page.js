@@ -1,7 +1,8 @@
 import DonateAndGift from '@/components/home/DonateAndGift';
 import Project from '@/components/home/Project';
 import SliderHero from '@/components/home/SliderHero';
-import SliderImpact from '@/components/home/SliderImpact';
+import Slide from '@/components/slide/Slide';
+import Sponsors from '@/components/sponsor/Sponsors';
 
 function page() {
   return (
@@ -9,7 +10,10 @@ function page() {
       <SliderHero />
       <DonateAndGift />
       <Project />
-      <SliderImpact />
+      {/* <SliderImpact /> */}
+      <Slide/>
+      <Sponsor />
+      <Sponsors/>
     </main>
   );
 }
