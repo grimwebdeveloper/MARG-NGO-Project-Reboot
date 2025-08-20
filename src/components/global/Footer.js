@@ -1,9 +1,124 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import {
+  FaXTwitter,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+  FaBars,
+} from 'react-icons/fa6';
 
 const Footer = () => {
   return (
     <footer className='bg-zinc-800 text-white'>
       <div className='max-w-screen-xl mx-auto px-8 py-9'>
+        <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-12 text-lg lg:justify-items-end'>
+          <div className='flex flex-col gap-2'>
+            <Image src='/logo.png' alt='logo' width={65} height={65} />
+            <p>
+              Marg is dedicated to empowering communities through education,
+              health, and sustainable development
+            </p>
+            <a href='tel:9905100804'>9905100804</a>
+            <a href='mailto:sample@gmail.com'>sample@gmail.com</a>
+            <div className='flex gap-4'>
+              <a href='#'>
+                <FaXTwitter className='text-lg w-[32px] h-[32px] p-1' />
+              </a>
+              <a href='#'>
+                <FaFacebookF className='text-lg w-[32px] h-[32px] p-1' />
+              </a>
+              <a href='#'>
+                <FaInstagram className='text-lg w-[32px] h-[32px] p-1' />
+              </a>
+              <a href='#'>
+                <FaYoutube className='text-lg w-[32px] h-[32px] p-1' />
+              </a>
+              <a href='#'>
+                <FaLinkedinIn className='text-lg w-[32px] h-[32px] p-1' />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h2 className='uppercase font-bold mb-4 sm:mb-8 lg:mb-10'>
+              What We Do
+            </h2>
+            <ul>
+              <li>
+                <a href='#'>Education</a>
+              </li>
+              <li>
+                <a href='#'>Health</a>
+              </li>
+              <li>
+                <a href='#'>Women Empowerment</a>
+              </li>
+              <li>
+                <a href='#'>Environment</a>
+              </li>
+              <li>
+                <a href='#'>Education</a>
+              </li>
+              <li>
+                <a href='#'>Health</a>
+              </li>
+              <li>
+                <a href='#'>Women Empowerment</a>
+              </li>
+              <li>
+                <a href='#'>Environment</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className='uppercase font-bold mb-4 sm:mb-8 lg:mb-10'>
+              Resources
+            </h2>
+            <ul>
+              <li>
+                <a href='#'>Blog</a>
+              </li>
+              <li>
+                <a href='#'>Event</a>
+              </li>
+              <li>
+                <a href='#'>Gallery</a>
+              </li>
+              <li>
+                <a href='#'>Reports</a>
+              </li>
+              <li>
+                <a href='#'>FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className='uppercase font-bold mb-4 sm:mb-8 lg:mb-10'>
+              Socials
+            </h2>
+            <ul>
+              <li>
+                <a href='#'>Facebook</a>
+              </li>
+              <li>
+                <a href='#'>Instagram</a>
+              </li>
+              <li>
+                <a href='#'>Youtube</a>
+              </li>
+              <li>
+                <a href='#'>LinkedIn</a>
+              </li>
+              <li>
+                <a href='#'>Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <article className='flex flex-col gap-4 border-t border-b border-zinc-600 py-10'>
           <h2 className='text-3xl md:text-4xl lg:text-5xl text-center'>
             MARG: NGO FOR GIRL CHILD EDUCATION IN INDIA
@@ -71,7 +186,11 @@ const Footer = () => {
           </p>
         </article>
         <p className='text-center pt-6'>
-          All Rights Reserved &copy; <Link href='/' className='font-semibold hover:text-zinc-300 text-lg'>marngo.com</Link> 2025
+          All Rights Reserved &copy;{' '}
+          <Link href='/' className='font-semibold hover:text-zinc-300 text-lg'>
+            marngo.com
+          </Link>{' '}
+          2025
         </p>
       </div>
     </footer>
