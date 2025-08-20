@@ -4,8 +4,8 @@ import AnchorButton from '../global/AnchorButton';
 const HelpSection = () => {
   return (
     <section className="py-16 bg-[url('https://www.nanhikali.org/wp-content/uploads/2018/03/help-bg.jpg')] bg-cover bg-fixed bg-center bg-no-repeat bg-[position-y:8px] min-h-[564px] flex justify-center items-center">
-      <div className='max-w-screen-xl mx-auto px-8 flex flex-col gap-16 md:flex-row'>
-        <div className='md:flex-1'>
+      <div className='max-w-screen-xl mx-auto px-8 flex flex-col gap-16 md:flex-row md:gap-28'>
+        <div className='md:flex-1 max-w-[500px]'>
           <h2 class='text-center text-3xl md:text-4xl uppercase mb-6 md:text-left'>
             How Can You <span class='font-semibold'>Help?</span>
           </h2>
