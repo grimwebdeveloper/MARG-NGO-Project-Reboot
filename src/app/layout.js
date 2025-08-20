@@ -1,4 +1,6 @@
 import './globals.css';
+import Navbar from '@/components/global/Navbar';
+import Footer from '@/components/global/Footer';
 import { Zilla_Slab } from 'next/font/google';
 
 // Load the font
@@ -17,7 +19,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${zillaSlab.className} antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

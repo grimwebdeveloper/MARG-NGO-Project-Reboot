@@ -1,0 +1,17 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: #8b8a88 !important; 
+  font-size: 20px !important;
+  transform: scale(1.6); 
+}
+
+.swiper-button-prev {
+  left: 5px !important;
+}
+.swiper-button-next {
+  right: 5px !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  border: none !important;
+}
