@@ -8,14 +8,14 @@ export default function TakeALook() {
     {
       id: 1,
       title: "View Photo Gallery",
-      link: "/photo-gallery",
-      img: "https://www.nanhikali.org/wp-content/uploads/2019/03/tmm.jpg",
+      link: "#",
+      img: "/tmm.jpg",
     },
     {
       id: 2,
       title: "View Video Gallery",
-      link: "/photo-gallery/video-gallery",
-      img: "https://www.nanhikali.org/wp-content/uploads/2023/03/mahindra-Blues-Festival.jpg",
+      link: "#",
+      img: "/tmm2.jpg",
     },
   ];
 
