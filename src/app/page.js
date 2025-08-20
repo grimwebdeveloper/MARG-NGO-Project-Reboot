@@ -1,4 +1,5 @@
 import DonateAndGift from '@/components/home/DonateAndGift';
+import TakeALook from '@/components/home/GalleryCard';
 import Project from '@/components/home/Project';
 import SliderHero from '@/components/home/SliderHero';
 import Sponsor from '@/components/home/Sponsor';
@@ -13,8 +14,9 @@ function page() {
       <Project />
       {/* <SliderImpact /> */}
       <Slide/>
-      <Sponsor />
+      {/* <Sponsor /> */}
       <Sponsors/>
+      <TakeALook />
     </main>
   );
 }
