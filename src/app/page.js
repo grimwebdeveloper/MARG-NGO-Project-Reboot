@@ -5,6 +5,7 @@ import SliderHero from '@/components/home/SliderHero';
 import Sponsor from '@/components/home/Sponsor';
 import Slide from '@/components/slide/Slide';
 import Sponsors from '@/components/sponsor/Sponsors';
+import HelpSection from '@/components/home/HelpSection';
 
 function page() {
   return (
@@ -16,6 +17,7 @@ function page() {
       <Slide/>
       {/* <Sponsor /> */}
       <Sponsors/>
+      <HelpSection />
       <TakeALook />
     </main>
   );
