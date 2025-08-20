@@ -30,7 +30,7 @@ const GalleryCard = () => {
                   className='hover:scale-110 transition-transform duration-500'
                 />
               </div>
-              <Button content={item.buttonContent} externalClass='mx-auto ' />
+              <Button content={item.buttonContent} externalClass='mx-auto flex mt-10' />
             </div>
           ))}
         </div>
