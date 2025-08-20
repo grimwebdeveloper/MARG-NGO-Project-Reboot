@@ -1,0 +1,49 @@
+export default function HelpSection() {
+  return (
+    <section className="bg-cover bg-fixed bg-center bg-no-repeat"
+      style={{
+        backgroundImage:
+          "url('https://www.nanhikali.org/wp-content/uploads/2018/03/help-bg.jpg')",
+        backgroundPositionY: '8px',
+      }}
+    >
+      <div className="max-w-[1280px] mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-12">
+        {/* Text Block */}
+        <div className="md:w-1/2 animate-fadeInLeft">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-snug font-serif">
+            How Can You <span className="text-primary">Help?</span>
+          </h2>
+          <p className="text-gray-800 mb-4 text-lg">
+            <strong>Project Nanhi Kali</strong> is a participatory project wherein you can sponsor the education of an underprivileged girl child for a minimum period of one year. For just ₹6,000, you can provide her with the key to a brighter future.
+          </p>
+          <p className="text-gray-800 mb-4 text-lg">
+            Your support goes beyond financial assistance—it's an investment in her potential, her dreams, and her empowerment. She gains access to 21st century skills, physical education, and a chance to break free from household work.
+          </p>
+          <p className="text-gray-800 mb-6 text-lg">
+            Sponsors receive an annual progress report, witnessing firsthand the impact of their generosity.
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-orange-600 text-white px-6 py-3 rounded hover:bg-gray-700 transition text-lg"
+          >
+            Donate Now
+          </a>
+        </div>
+
+        {/* Image Block */}
+        <div className="md:w-1/2 animate-fadeInRight">
+          <div className="w-full max-w-md mx-auto rounded-lg overflow-hidden shadow-xl">
+            <img
+              src="https://www.nanhikali.org/wp-content/uploads/2024/05/how-can-help-nanhikali.jpg"
+              alt="Two school children supported by Nanhi Kali"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

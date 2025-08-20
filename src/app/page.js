@@ -4,9 +4,9 @@ import Project from '@/components/home/Project';
 import SliderHero from '@/components/home/SliderHero';
 import Slide from '@/components/slide/Slide';
 import Sponsors from '@/components/sponsor/Sponsors';
+import HelpSection from '@/components/home/HelpSection';
 import HeartWarmingSection from '@/components/home/HeartWarmingSection';
 import NewsAndEvents from '@/components/home/NewsAndEvents';
-
 
 function page() {
   return (
@@ -14,11 +14,12 @@ function page() {
       <SliderHero />
       <DonateAndGift />
       <Project />
-      <Slide/>
+      <Slide />
       <HeartWarmingSection />
-      <NewsAndEvents/>
+      <HelpSection />
+      <NewsAndEvents />
       <TakeALook />
-      <Sponsors/>
+      <Sponsors />
     </main>
   );
 }
