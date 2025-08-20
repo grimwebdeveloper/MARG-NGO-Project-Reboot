@@ -1,6 +1,7 @@
 import DonateAndGift from '@/components/home/DonateAndGift';
 import Project from '@/components/home/Project';
 import SliderHero from '@/components/home/SliderHero';
+import Sponsor from '@/components/home/Sponsor';
 import Slide from '@/components/slide/Slide';
 import Sponsors from '@/components/sponsor/Sponsors';
 
