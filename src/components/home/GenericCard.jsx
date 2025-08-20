@@ -1,10 +1,12 @@
+import React from 'react'
 import Image from "next/image";
- import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import { TiDocumentText } from "react-icons/ti";
 import Link from 'next/link';
 
-const Card = () => (
-  <div className="bg-white">
+const GenericCard = () => {
+  return (
+    <div className="bg-white">
           <div className="p-2 mb-4">
             <img src="https://www.nanhikali.org/wp-content/uploads/2024/10/new-story-nk.jpg" alt="" />
             <div className="px-5 pt-5 text-left leading-6">
@@ -26,21 +28,7 @@ const Card = () => (
             
           </div>
         </div>
-)
-
-
-export default function HeartWarmingSection() {
-  return (
-   <section className="px-4 text-center bg-[#eeede9] pt-16 pb-6">
-      <div className="max-w-screen-xl mx-auto">
-        <h1 className="font-bold text-3xl mb-8 uppercase">Heart-warming stories</h1>
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Card/>
-          <Card/>
-          <Card/>
-        </div>
-      </div>
-   </section>
-  );
+  )
 }
-  
+
+export default GenericCard
