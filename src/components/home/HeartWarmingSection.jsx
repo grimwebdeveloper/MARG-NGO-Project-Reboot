@@ -42,7 +42,9 @@ const HeartWarmingSection = () => {
                 />
               </div>
               <div className='p-5 pb-0'>
-                <h3 className='text-center font-semibold pb-2.5 md:text-left'>{item.h3}</h3>
+                <h3 className='text-center font-semibold pb-2.5 md:text-left'>
+                  {item.h3}
+                </h3>
                 <p className='mb-4 text-zinc-700'>{item.p}</p>
                 <div className='flex items-center justify-between'>
                   <div className='flex items-center gap-1'>
