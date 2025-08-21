@@ -20,7 +20,7 @@ const Sponsors = () => {
           spaceBetween={50}
           slidesPerView={3}
           navigation
-          autoplay={{ delay: 200500, disableOnInteraction: false }}
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
           breakpoints={{
             320: {
               slidesPerView: 1,
