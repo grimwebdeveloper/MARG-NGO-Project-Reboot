@@ -26,7 +26,7 @@ const HeartWarmingSection = () => {
   return (
     <section className='bg-[#ebeae5] pt-[60px] pb-10'>
       <div className='max-w-screen-xl mx-auto px-8'>
-        <h2 className='font-bold text-center text-3xl md:text-4xl uppercase mb-8'>
+        <h2 className='font-semibold text-center text-3xl md:text-4xl uppercase mb-8'>
           Heart-warming stories
         </h2>
         <div className='grid gap-6 md:grid-cols-3'>

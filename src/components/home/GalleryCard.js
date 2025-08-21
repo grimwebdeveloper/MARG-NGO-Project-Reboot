@@ -15,7 +15,7 @@ const GalleryCard = () => {
   return (
     <section className='bg-[#efeeea] pt-[60px] pb-2.5'>
       <div className='max-w-screen-xl mx-auto px-8'>
-        <h2 className='font-bold text-center text-3xl md:text-4xl uppercase mb-8'>
+        <h2 className='font-semibold text-center text-3xl md:text-4xl uppercase mb-8'>
           Take a look
         </h2>
         <div className='grid gap-6 md:grid-cols-2'>

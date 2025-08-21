@@ -27,7 +27,7 @@ const NewsAndEvents = () => {
     <section className='bg-[#e1e1e1] pt-[60px] pb-10'>
       <div className='max-w-screen-xl mx-auto px-8'>
         <h2 className='text-center text-3xl md:text-4xl uppercase'>
-          News & <span className='font-bold'>Events</span>
+          News & <span className='font-semibold'>Events</span>
         </h2>
         <p className='text-center mb-8 font-semibold text-lg'>
           Stay up-to-date with the latest from Nanhi Kali

@@ -4,77 +4,87 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './slide.css';
+import Image from 'next/image';
 
 export default function Slide() {
-  const items = [
+  const slideData = [
     {
       id: 1,
-      img: './state-icon.png',
+      img: '/state-icon.png',
       number: '20',
       text: 'DISTRICTS',
-      offset: '',
+      down: false,
     },
     {
       id: 2,
-      img: './touched-circle-01.png',
+      img: '/touched-circle-01.png',
       number: '179,175',
       text: 'GIRLS SUPPORTED',
-      offset: '',
+      down: true,
     },
     {
       id: 3,
-      img: './touched-circle-03.png',
+      img: '/touched-circle-03.png',
       number: '1600',
       text: 'SKILLS ASSOCIATES (WOMEN TUTORS FROM THE COMMUNITY)',
-      offset: '',
+      down: false,
     },
     {
       id: 4,
-      img: './Primary-school.png',
+      img: '/Primary-school.png',
       number: '1878',
       text: 'SCHOOLS',
-      offset: '',
+      down: true,
     },
-    { id: 5, img: './state-icon.png', number: '7', text: 'STATES', offset: '' },
+    { id: 5, img: '/state-icon.png', number: '7', text: 'STATES', down: false },
   ];
 
   return (
-    <section className="bg-[#ffc511] py-12">
+    <section className="bg-[#ffc511] py-12 pb-40">
+      <div className='max-w-screen-xl mx-auto px-8'>
       <h2 className='font-bold text-center text-3xl md:text-4xl uppercase'>
         870,000+ girls supported since inception
       </h2>
       <p className='text-center text-[26px] md:text-3xl lg:text-4xl mt-16 mb-8'>
         Impact in the Year 2024-25
       </p>
-      <div className='max-w-[1280px] mx-auto px-4 py:[85px] md:py-[90px]'>
-        <Swiper
-          modules={[Autoplay, Navigation]}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
+      <Swiper
+          modules={[Navigation, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={3}
           navigation
-          spaceBetween={40}
-          slidesPerView={1}
+          autoplay={{ delay: 200500, disableOnInteraction: false }}
           breakpoints={{
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            820: {
+              slidesPerView: 3,
+              spaceBetween: 0,
+            },
+             1024: {
+              slidesPerView: 4,
+              spaceBetween: 0,
+            },
           }}
-          loop={true}
         >
-          {items.map((item) => (
-            <SwiperSlide key={item.id}>
-              <div
-                className={`flex flex-col items-center relative ${item.offset}`}
-              >
-                <div className='w-[160px] h-[160px] flex items-center justify-center rounded-full bg-white shadow-md text-3xl mx-auto'>
-                  <img className='p-3' src={item.img} alt='' />
-                </div>
-                <div className='relative mt-12 text-center'>
-                  <span className='text-2xl font-serif block'>
-                    {item.number}
-                  </span>
-                  <p className='text-1xl font-extrabold mt-1 max-w-[180px] mx-auto'>
-                    {item.text}
-                  </p>
-                  <div className='absolute -top-10 left-1/2 -translate-x-1/2 w-px h-10 border-l-2 border-dashed border-black'></div>
+          {slideData.map((item, idx) => (
+            <SwiperSlide key={idx} className='min-h-52'>
+              <div className={`flex flex-col items-center gap-6 text-lg ${item.down && 'mt-28'}`}>
+                <Image
+                  src={item.img}
+                  alt='microsoft'
+                  width={150}
+                  height={150}
+                />
+                <div className='text-center font-semibold'>
+                  <div>{item.number}</div>
+                  <div>{item.text}</div>
                 </div>
               </div>
             </SwiperSlide>

@@ -4,7 +4,7 @@ import AnchorButton from '../global/AnchorButton';
 const Project = () => {
   return (
     <section className='bg-zinc-200'>
-      <div className='max-w-screen-xl mx-auto p-8 md:flex md:gap-8'>
+      <div className='max-w-screen-xl mx-auto px-8 py-16 md:flex md:gap-8'>
         <div className='mb-8 md:flex-1'>
           <h2 className='text-[32px] leading-8'>
             Project Nanhi Kali:{' '}
@@ -52,9 +52,8 @@ const Project = () => {
           alt='project'
           width={470}
           height={313}
-          className='mx-auto md:pl-8'
+          className=' md:pl-8 w-full md:w-1/2'
           style={{
-            width: '50%',
             alignSelf: 'flex-start',
           }}
         />
